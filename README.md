@@ -1,6 +1,6 @@
 # cherry-🥧
 
-consoldating llama.cpp scripts for easy conversion
+consoldating llama.cpp scripts and quantize.exe for easy conversions
 
 should be easy to add more arguments if needed 
 
