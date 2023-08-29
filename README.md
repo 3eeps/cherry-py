@@ -9,6 +9,7 @@ just run convert_pipeline.py and follow prompts.
 thanks to https://github.com/ggerganov for his amazing work on llama.cpp
 
 quantize help:
+'''
 usage: quantize.exe [--help] [--allow-requantize] [--leave-output-tensor] model-f32.gguf [model-quant.gguf] type [nthreads]
 
   --allow-requantize: Allows requantizing tensors that have already been quantized. Warning: This can severely reduce quality compared to quantizing from 16bit or 32bit
@@ -34,3 +35,4 @@ Allowed quantization types:
    7  or  Q8_0   :  6.70G, +0.0004 ppl @ LLaMA-v1-7B
    1  or  F16    : 13.00G              @ 7B
    0  or  F32    : 26.00G              @ 7B
+   '''
