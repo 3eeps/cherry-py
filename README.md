@@ -11,7 +11,18 @@ thanks to https://github.com/ggerganov for his amazing work on llama.cpp
 ggml_to_gguf help
 
 ```
-* Using config: Namespace(input=None, output=None, name=None, desc=None, gqa=1, eps='5.0e-06', context_length=2048, model_metadata_dir=None, vocab_dir=None, vocabtype='spm')
+arguements:		defaults/choice:		help/info:   
+--input							Input GGMLv3 filename
+--output 		 				Output GGUF filename
+--name							Set model name
+--desc 							Set model description
+--gqa 			default = 1, 			grouped-query attention factor (use 8 for LLaMA2 70B)
+--eps 			default = '5.0e-06',		RMS norm eps: Use 1e-6 for LLaMA1 and OpenLLaMA, use 1e-5 for LLaMA2
+--context-length	default = 2048, 		Default max context length: LLaMA1 is typically 2048, LLaMA2 is typically 4096
+
+--model-metadata-dir 	 				Load HuggingFace/.pth vocab and metadata from the specified directory
+--vocab-dir 						directory containing tokenizer.model, if separate from model file - only meaningful with --model-metadata-dir
+--vocabtype		choices=["spm", "bpe"]  	vocab format - only meaningful with --model-metadata-dir and/or --vocab-dir (default: spm)", default="spm"
 ```
 
 hf-to-gguf help:
