@@ -1,5 +1,5 @@
 # cherry-🥧
-script to consoldate hf-to-gguf and ggml-to-gguf llama.cpp scripts for easy conversion
+
 
 should be easy to add more arguments if needed 
 
