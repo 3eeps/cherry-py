@@ -26,6 +26,7 @@ def ggml_to_gguf():
     os.system(f"py convert_ggml_to_gguf.py --input {arg_list_ggml[0]} --output {arg_list_ggml[1]} --model-metadata-dir {arg_list_ggml[2]}")
 
 run_loop = True
+print('#cherry-py\n')
 print("'hf': hf-to-gguf")
 print("'ggml': ggml-gguf")
 print("'quant': quantize-gguf")
