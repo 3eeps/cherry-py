@@ -1,12 +1,27 @@
 # cherry-🥧
 
-script to consoldate hf-to-gguf and ggml-to-gguf llama.cpp scripts for easy conversion
+consoldating llama.cpp scripts for easy conversion
 
 should be easy to add more arguments if needed 
 
 just run convert_pipeline.py and follow prompts.
 
 thanks to https://github.com/ggerganov for his amazing work on llama.cpp
+
+ggml_to_gguf help
+
+```
+* Using config: Namespace(input=None, output=None, name=None, desc=None, gqa=1, eps='5.0e-06', context_length=2048, model_metadata_dir=None, vocab_dir=None, vocabtype='spm')
+```
+
+hf-to-gguf help:
+
+```
+Usage: convert_hf_to_gguf.py dir-model ftype
+
+  ftype == 0 -> float32
+  ftype == 1 -> float16
+```
 
 quantize help:
 
