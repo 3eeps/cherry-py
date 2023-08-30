@@ -25,12 +25,11 @@ def ggml_to_gguf():
         arg_list_ggml[iter] = input(f"{arg}: ")
     os.system(f"py convert_ggml_to_gguf.py --input {arg_list_ggml[0]} --output {arg_list_ggml[1]} --model-metadata-dir {arg_list_ggml[2]}")
 
-run_loop = True
-print('#cherry-py\n')
-print("'hf': hf-to-gguf")
-print("'ggml': ggml-gguf")
-print("'quant': quantize-gguf")
-while run_loop:
+while True:
+    print('#cherry-py\n')
+    print("'hf': hf-to-gguf")
+    print("'ggml': ggml-to-gguf")
+    print("'quant': quantize-gguf")
     convert_type = input(">>> ")
     if convert_type == "hf":
         hf_to_gguf()
@@ -38,4 +37,3 @@ while run_loop:
         ggml_to_gguf()
     elif convert_type == "quant":
         quant_gguf()
-    run_loop = False
