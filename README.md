@@ -4,7 +4,7 @@ consoldating llama.cpp scripts and quantize.exe for easy conversions
 
 should be trivial to add more arguments if needed
 
-keep all files in same dir as 'convert_pipeline.py' then run convert_pipeline.py and follow prompts.
+keep all files in same dir as 'convert_pipeline.py' then run `convert_pipeline.py` and follow prompts.
 
 thanks to https://github.com/ggerganov for his amazing work on llama.cpp
 
