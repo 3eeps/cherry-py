@@ -12,7 +12,7 @@ ggml_to_gguf help
 
 ```
 arguements:		defaults/choice:		help/info:   
---input							Input GGMLv3 filename
+--input							Input GGMLv3 filename (point to local dir)
 --output 		 				Output GGUF filename
 --name							Set model name
 --desc 							Set model description
